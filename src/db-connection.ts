@@ -3,6 +3,7 @@ import { Pool } from 'pg';
 
 //localhost
 
+/*
 const pool = new Pool({
   user: 'postgres',
   password: 'admin',
@@ -10,17 +11,17 @@ const pool = new Pool({
   port: 5432, // default Postgres port
   database: 'RPG'
 });
-
-//render
-/*
-const pool = new Pool({
-  user: 'r6smashorpassdb_user',
-  password: 'rcNq7PaQj9RaXQA3Gu6zCYBMyLCQ08Ai',
-  host: 'dpg-d08eu0fgi27c738hedh0-a',
-  port: 5432, // default Postgres port
-  database: 'r6smashorpassdb'
-});
 */
+//render
+
+const pool = new Pool({
+  user: 'rpgdb_afcf_user',
+  password: 'kgl2SiKWpKCCbEIyAk4mabYqttE9aqag',
+  host: 'dpg-d11171q4d50c739t552g-a',
+  port: 5432, // default Postgres port
+  database: 'RPGDB'
+});
+
 
 
 
