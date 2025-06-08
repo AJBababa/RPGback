@@ -279,6 +279,7 @@ io.on('connection', (socket: any) => {
             // borrar sala si no hay players
             if (users[room].length === 0) {
                 delete users[room];
+                
             }
 
             // Emitir lista actualizada
@@ -406,6 +407,7 @@ io.on('connection', (socket: any) => {
         if (state.enemy.current_health_points <= 0) {
             io.to(data.room).emit('enemy_defeated');
             delete roomStates[data.room];
+            delete users[data.room];
             return;
         }
 

@@ -450,6 +450,7 @@ io.on('connection', function (socket) {
         if (state.enemy.current_health_points <= 0) {
             io.to(data.room).emit('enemy_defeated');
             delete roomStates[data.room];
+            delete users[data.room];
             return;
         }
         // Cambiar turno
